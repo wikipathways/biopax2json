@@ -17,8 +17,6 @@ module.exports = {
     var displayId = 1;
     $('bp\\:PublicationXref').each(function() {
       var xmlPublicationXrefSelection = $( this );
-      console.log('xmlPublicationXrefSelection');
-      console.log(xmlPublicationXrefSelection);
       var publicationXref = {};
       publicationXref.type = 'PublicationXref';
       publicationXref.id = xmlPublicationXrefSelection.attr('rdf:ID') || xmlPublicationXrefSelection.attr('rdf:about');
