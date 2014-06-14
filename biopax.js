@@ -6,6 +6,7 @@ module.exports = {
     var jsonBiopax = {};
     jsonBiopax.xref = [];
 
+    var displayId = 1;
     $('bp\\:PublicationXref').each(function() {
       var xmlPublicationXrefSelection = $( this );
       console.log('xmlPublicationXrefSelection');
@@ -21,6 +22,8 @@ module.exports = {
         publicationXref.deprecatedId = publicationXref.id;
         publicationXref.id = 'http://identifiers.org/pubmed/' + publicationXref.dbId;
       }
+      publicationXref.displayId = displayId;
+      displayId += 1;
       jsonBiopax.xref.push(publicationXref);
     });
     callback(null, jsonBiopax);
