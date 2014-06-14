@@ -3,8 +3,8 @@ module.exports = {
   // TODO get ontology terms and other data
 
   toJson: function($, pathwayMetadata, callback) {
-    var jsonBiopax = {};
-    jsonBiopax.xref = [];
+    var jsonBiopax = pathwayMetadata;
+    jsonBiopax.entities = [];
 
     var displayId = 1;
     $('bp\\:PublicationXref').each(function() {
@@ -24,7 +24,7 @@ module.exports = {
       }
       publicationXref.displayId = displayId;
       displayId += 1;
-      jsonBiopax.xref.push(publicationXref);
+      jsonBiopax.entities.push(publicationXref);
     });
     callback(null, jsonBiopax);
   }
