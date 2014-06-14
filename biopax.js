@@ -1,8 +1,16 @@
+var Cheerio = require('cheerio');
 'use strict';
 module.exports = {
   // TODO get ontology terms and other data
 
-  toJson: function($, pathwayMetadata, callback) {
+  toJson: function(str, pathwayMetadata, callback) {
+    $ = Cheerio.load(str, {
+      normalizeWhitespace: true,
+    xmlMode: true,
+    decodeEntities: true,
+    lowerCaseTags: false
+    });
+
     var jsonBiopax = pathwayMetadata;
     jsonBiopax.entities = [];
 
