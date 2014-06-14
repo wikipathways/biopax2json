@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/wikipathways/biopax2json/issues"
   },
-  "homepage": "https://github.com/wikipathways/biopax2json"
+  "homepage": "https://github.com/wikipathways/biopax2json",
+  "dependencies": {
+    "cheerio": "~0.17.0"
+  },
+  "devDependencies": {
+    "pretty-data": "~0.40.0"
+  }
 }
