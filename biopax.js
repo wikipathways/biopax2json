@@ -24,19 +24,9 @@ module.exports = {
         lowerCaseTags: false
       });
       xmlSelection = $.root();
-      //xmlSelection = $('Biopax');
-      console.log(xmlSelection);
     } else {
-
-
       var xmlDoc = $.parseXML(str);
       xmlSelection = $(xmlDoc);
-
-      /*
-      var xmlDoc = $.parseXML( str );
-      xmlSelection = $( xmlDoc );
-      //xmlSelection = $( xmlDoc );
-      //*/
     }
 
     var jsonBiopax = pathwayMetadata;
