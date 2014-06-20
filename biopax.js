@@ -20,7 +20,6 @@ module.exports = {
         lowerCaseTags: false
       });
       xmlSelection = thisJquery.root();
-      //xmlSelection = $('Biopax');
     } else {
       thisJquery = $;
       var xmlDoc = thisJquery.parseXML(denamespacedStr);
