@@ -6,9 +6,15 @@ module.exports = {
 
 
     var xmlSelection;
+    // if we were just using Cheerio, we could select namespace elements like this:
+    // xmlSelection('bp\\:PublicationXref')
+    // but in my tests with this in Chrome, it appears jQuery doesn't work with that selector
+    // so to make this work in both Node.js and the browser, I'm removing the namespace prefixes from element tagNames
+    // namespace prefixes appear to work OK as attribute names.
+    var denamespacedStr = str.replace(/bp\:/g, '');
     if (typeof window === 'undefined') {
       var Cheerio = require('cheerio');
-      xmlSelection = Cheerio.load(str, {
+      xmlSelection = Cheerio.load(denamespacedStr, {
         normalizeWhitespace: true,
         xmlMode: true,
         decodeEntities: true,
@@ -24,14 +30,14 @@ module.exports = {
     jsonBiopax.entities = [];
 
     var displayName = 1;
-    xmlSelection('bp\\:PublicationXref').each(function() {
+    xmlSelection('PublicationXref').each(function() {
       var xmlPublicationXrefSelection = xmlSelection( this );
       var publicationXref = {};
       publicationXref.type = 'PublicationXref';
       publicationXref.id = xmlPublicationXrefSelection.attr('rdf:ID') || xmlPublicationXrefSelection.attr('rdf:about');
-      var dbNameElement = xmlPublicationXrefSelection.find('bp\\:db')[0];
+      var dbNameElement = xmlPublicationXrefSelection.find('db')[0];
       publicationXref.dbName = xmlSelection( dbNameElement ).text().toLowerCase();
-      var dbIdElement = xmlPublicationXrefSelection.find('bp\\:id')[0];
+      var dbIdElement = xmlPublicationXrefSelection.find('id')[0];
       publicationXref.dbId = xmlSelection( dbIdElement ).text();
       if (publicationXref.id.indexOf('identifiers') === -1 && (publicationXref.dbName.toLowerCase() === 'pubmed' || publicationXref.dbName.toLowerCase() === 'medline') && /^\d+$/g.test(publicationXref.dbId)) {
         publicationXref.deprecatedId = publicationXref.id;
