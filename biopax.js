@@ -16,7 +16,7 @@ module.exports = {
       });
     } else {
       var xmlDoc = $.parseXML( str );
-      xmlSelection = $( xmlDoc.documentElement );
+      xmlSelection = $( xmlDoc );
       //xmlSelection = $( xmlDoc );
     }
 
