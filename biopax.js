@@ -10,10 +10,10 @@ module.exports = {
     // but in my tests with this in Chrome, it appears jQuery doesn't work with that selector
     // so to make this work in both Node.js and the browser, I'm removing the namespace prefixes from element tagNames
     // namespace prefixes appear to work OK as attribute names.
-    var denamespacedStr = str.replace(/bp\:/g, '');
+    var plainElementTagsStr = str.replace(/bp\:/g, '').replace(/rdf\:id/g, 'rdf:ID');
     if (typeof window === 'undefined') {
       var Cheerio = require('cheerio');
-      thisJquery = Cheerio.load(denamespacedStr, {
+      thisJquery = Cheerio.load(plainElementTagsStr, {
         normalizeWhitespace: true,
         xmlMode: true,
         decodeEntities: true,
@@ -22,7 +22,8 @@ module.exports = {
       xmlSelection = thisJquery.root();
     } else {
       thisJquery = $;
-      var xmlDoc = $.parseXML(denamespacedStr);
+      console.log(plainElementTagsStr);
+      var xmlDoc = $.parseXML(plainElementTagsStr);
       xmlSelection = $(xmlDoc);
     }
 
@@ -37,7 +38,7 @@ module.exports = {
       publicationXref.id = xmlPublicationXrefSelection.attr('rdf:ID') || xmlPublicationXrefSelection.attr('rdf:about');
       publicationXref.dbName = xmlPublicationXrefSelection.find('db').text().toLowerCase();
       publicationXref.dbId = xmlPublicationXrefSelection.find('id').text();
-      if (publicationXref.id.indexOf('identifiers') === -1 && (publicationXref.dbName === 'pubmed' || publicationXref.dbName === 'medline') && /^\d+$/g.test(publicationXref.dbId)) {
+      if (!!publicationXref && !!publicationXref.id && publicationXref.id.indexOf('identifiers') === -1 && (publicationXref.dbName === 'pubmed' || publicationXref.dbName === 'medline') && /^\d+$/g.test(publicationXref.dbId)) {
         publicationXref.deprecatedId = publicationXref.id;
         publicationXref.id = 'http://identifiers.org/pubmed/' + publicationXref.dbId;
       }
