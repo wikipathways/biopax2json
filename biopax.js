@@ -3,8 +3,7 @@ module.exports = {
   // TODO get ontology terms and other data
 
   toJson: function(str, pathwayMetadata, callback) {
-
-
+    var thisJquery;
     var xmlSelection;
     // if we were just using Cheerio, we could select namespace elements like this:
     // xmlSelection('bp\\:PublicationXref')
@@ -12,21 +11,20 @@ module.exports = {
     // so to make this work in both Node.js and the browser, I'm removing the namespace prefixes from element tagNames
     // namespace prefixes appear to work OK as attribute names.
     var denamespacedStr = str.replace(/bp\:/g, '');
-    var $ = $ || null;
-    if (!$) {
-      // Cheerio allows us to use jQuery selectors in Node.js
-    //if (typeof window === 'undefined') {
+    if (typeof window === 'undefined') {
       var Cheerio = require('cheerio');
-      $ = Cheerio.load(denamespacedStr, {
+      thisJquery = Cheerio.load(denamespacedStr, {
         normalizeWhitespace: true,
         xmlMode: true,
         decodeEntities: true,
         lowerCaseTags: false
       });
-      xmlSelection = $.root();
+      xmlSelection = thisJquery.root();
+      //xmlSelection = $('Biopax');
     } else {
-      var xmlDoc = $.parseXML(str);
-      xmlSelection = $(xmlDoc);
+      thisJquery = $;
+      var xmlDoc = thisJquery.parseXML(str);
+      xmlSelection = thisJquery(xmlDoc);
     }
 
     var jsonBiopax = pathwayMetadata;
@@ -34,13 +32,12 @@ module.exports = {
 
     var displayName = 1;
     xmlSelection.find('PublicationXref').each(function() {
-      var xmlPublicationXrefSelection = $( this );
+      var xmlPublicationXrefSelection = thisJquery( this );
       var publicationXref = {};
       publicationXref.type = 'PublicationXref';
       publicationXref.id = xmlPublicationXrefSelection.attr('rdf:ID') || xmlPublicationXrefSelection.attr('rdf:about');
       publicationXref.dbName = xmlPublicationXrefSelection.find('db').text().toLowerCase();
       publicationXref.dbId = xmlPublicationXrefSelection.find('id').text();
-      // convert the id to an identifiers.org URI, if it's a pubmed reference and not already an identifiers.org URI
       if (publicationXref.id.indexOf('identifiers') === -1 && (publicationXref.dbName === 'pubmed' || publicationXref.dbName === 'medline') && /^\d+$/g.test(publicationXref.dbId)) {
         publicationXref.deprecatedId = publicationXref.id;
         publicationXref.id = 'http://identifiers.org/pubmed/' + publicationXref.dbId;
