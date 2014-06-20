@@ -23,7 +23,7 @@ module.exports = {
       //xmlSelection = $('Biopax');
     } else {
       thisJquery = $;
-      var xmlDoc = thisJquery.parseXML(str);
+      var xmlDoc = thisJquery.parseXML(denamespacedStr);
       xmlSelection = thisJquery(xmlDoc);
     }
 
