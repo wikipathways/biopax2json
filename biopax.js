@@ -22,8 +22,8 @@ module.exports = {
       xmlSelection = thisJquery.root();
     } else {
       thisJquery = $;
-      var xmlDoc = thisJquery.parseXML(denamespacedStr);
-      xmlSelection = thisJquery(xmlDoc);
+      var xmlDoc = $.parseXML(denamespacedStr);
+      xmlSelection = $(xmlDoc);
     }
 
     var jsonBiopax = pathwayMetadata;
