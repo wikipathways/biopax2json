@@ -22,7 +22,6 @@ module.exports = {
       xmlSelection = thisJquery.root();
     } else {
       thisJquery = $;
-      console.log(plainElementTagsStr);
       var xmlDoc = $.parseXML(plainElementTagsStr);
       xmlSelection = $(xmlDoc);
     }
