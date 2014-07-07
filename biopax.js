@@ -65,6 +65,12 @@ module.exports = {
       }
       publicationXref.year = yearElements.text();
 
+      var authorElements = xmlPublicationXrefSelection.find('author');
+      if (!!authorElements && authorElements.length > 1) {
+        authorElements = thisJquery(authorElements[0]);
+      }
+      publicationXref.author = authorElements.text();
+
       if (!!publicationXref && !!publicationXref.id && publicationXref.id.indexOf('identifiers') === -1 && (publicationXref.dbName === 'pubmed' || publicationXref.dbName === 'medline') && /^\d+$/g.test(publicationXref.dbId)) {
         publicationXref.deprecatedId = publicationXref.id;
         publicationXref.id = 'http://identifiers.org/pubmed/' + publicationXref.dbId;
