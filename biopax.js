@@ -35,8 +35,36 @@ module.exports = {
       var publicationXref = {};
       publicationXref.type = 'PublicationXref';
       publicationXref.id = xmlPublicationXrefSelection.attr('rdf:ID') || xmlPublicationXrefSelection.attr('rdf:about');
-      publicationXref.dbName = xmlPublicationXrefSelection.find('db').text().toLowerCase();
-      publicationXref.dbId = xmlPublicationXrefSelection.find('id').text();
+      var dbNameElements = xmlPublicationXrefSelection.find('db');
+      if (!!dbNameElements && dbNameElements.length > 1) {
+        dbNameElements = thisJquery(dbNameElements[0]);
+      }
+      publicationXref.dbName = dbNameElements.text().toLowerCase();
+
+      var dbIdElements = xmlPublicationXrefSelection.find('id');
+      if (!!dbIdElements && dbIdElements.length > 1) {
+        dbIdElements = thisJquery(dbIdElements[0]);
+      }
+      publicationXref.dbId = dbIdElements.text();
+
+      var titleElements = xmlPublicationXrefSelection.find('title');
+      if (!!titleElements && titleElements.length > 1) {
+        titleElements = thisJquery(titleElements[0]);
+      }
+      publicationXref.title = titleElements.text();
+
+      var sourceElements = xmlPublicationXrefSelection.find('source');
+      if (!!sourceElements && sourceElements.length > 1) {
+        sourceElements = thisJquery(sourceElements[0]);
+      }
+      publicationXref.source = sourceElements.text();
+
+      var yearElements = xmlPublicationXrefSelection.find('year');
+      if (!!yearElements && yearElements.length > 1) {
+        yearElements = thisJquery(yearElements[0]);
+      }
+      publicationXref.year = yearElements.text();
+
       if (!!publicationXref && !!publicationXref.id && publicationXref.id.indexOf('identifiers') === -1 && (publicationXref.dbName === 'pubmed' || publicationXref.dbName === 'medline') && /^\d+$/g.test(publicationXref.dbId)) {
         publicationXref.deprecatedId = publicationXref.id;
         publicationXref.id = 'http://identifiers.org/pubmed/' + publicationXref.dbId;
