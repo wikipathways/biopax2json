@@ -4,9 +4,19 @@ module.exports = (function() {
   'use strict';
 
   function toJson(str, pathwayMetadata, callback) {
-    // Decode and then encode to ensure there are no named character references
-    // (e.g. &copy;) in string
-    str = he.encode(he.decode(str), {allowUnsafeSymbols: true});
+    // Find any named character references (e.g. &copy;) in string. If present,
+    // decode them and then re-encode using Unicode values.
+    // Reason: Internet Explorer chokes on (some?) named character references in XML.
+    var noNamedCharacterReferencesString = str.replace(/&\w+;/g, function(match) {
+      return he.encode(he.decode(match));
+    });
+    str = he.encode(noNamedCharacterReferencesString, {
+      // allowUnsafeSymbols means don't encode "<" and ">"
+      // (plus some other symbols), but we do encode all other
+      // symbols, such as the soft hyphen, which would cause
+      // trouble in IE.
+      'allowUnsafeSymbols': true
+    });
 
     // TODO convert ontology terms and other data
 
