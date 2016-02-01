@@ -16,16 +16,17 @@
     "pathway"
   ],
   "author": "WikiPathways team",
-  "license": "Apache 2",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/wikipathways/biopax2json/issues"
   },
   "homepage": "https://github.com/wikipathways/biopax2json",
   "dependencies": {
-    "cheerio": "~0.17.0",
+    "cheerio": "^0.19.0",
     "he": "^0.5.0"
   },
   "devDependencies": {
-    "pretty-data": "~0.40.0"
+    "pretty-data": "~0.40.0",
+    "sinon": "^1.17.2"
   }
 }
