@@ -22,16 +22,20 @@ module.exports = (function() {
 
     var thisJquery;
     var xmlSelection;
-    // if we were just using Cheerio, we could select namespace elements like this:
+
+    // We used to remove the namespace prefixes from element tagNames
+    //str = str.replace(/(<\/?\w+)\:(\w+[\>\ ])/g, '$1$2');
+    //
+    // Cheerio/Node.js works with this namespaced element selector:
     // xmlSelection('bp\\:PublicationXref')
-    // but in my tests with this in Chrome, it appears jQuery doesn't work with that selector
-    // so to make this work in both Node.js and the browser,
-    // I'm removing the namespace prefixes from element tagNames
+    // but in my tests with this in Chrome, it appears jQuery doesn't work with that selector.
+    // Chrome appears to only work with this selector:
+    // biopax.find('PublicationXref')
     //
-    // Update: this selector works in both Chrome and IE (test on FF and node):
+    // So we combine the two to get a selector that works for
+    // Chrome, IE, Cheerio/Node.js (TODO test on FF):
     // biopax.find('bp\\:PublicationXref, PublicationXref')
-    //
-    // namespace prefixes appear to work OK as attribute names.
+
     if (typeof window === 'undefined') {
       var Cheerio = require('cheerio');
       thisJquery = Cheerio.load(str, {
@@ -55,39 +59,45 @@ module.exports = (function() {
       var xmlPublicationXrefSelection = thisJquery(this);
       var publicationXref = {};
       publicationXref.type = 'PublicationXref';
-      publicationXref.id = xmlPublicationXrefSelection.attr('rdf:ID') ||
-          xmlPublicationXrefSelection.attr('rdf:about');
-      var dbNameElements = xmlPublicationXrefSelection.find('bp:db');
+      // NOTE: GPML incorrectly uses rdf:id for this. We are correcting that in
+      // the gpml2pvjson converter, not here.
+      var publicationXrefId = xmlPublicationXrefSelection.attr('rdf\\:ID, ID') ||
+          xmlPublicationXrefSelection.attr('rdf\\:about, about');
+      if (publicationXrefId) {
+        publicationXref.id = publicationXrefId;
+      }
+
+      var dbNameElements = xmlPublicationXrefSelection.find('bp\\:db, db');
       if (!!dbNameElements && dbNameElements.length > 1) {
         dbNameElements = thisJquery(dbNameElements[0]);
       }
       publicationXref.dbName = dbNameElements.text().toLowerCase();
 
-      var dbIdElements = xmlPublicationXrefSelection.find('bp:id');
+      var dbIdElements = xmlPublicationXrefSelection.find('bp\\:id, id');
       if (!!dbIdElements && dbIdElements.length > 1) {
         dbIdElements = thisJquery(dbIdElements[0]);
       }
       publicationXref.dbId = dbIdElements.text();
 
-      var titleElements = xmlPublicationXrefSelection.find('bp:title');
+      var titleElements = xmlPublicationXrefSelection.find('bp\\:title, title');
       if (!!titleElements && titleElements.length > 1) {
         titleElements = thisJquery(titleElements[0]);
       }
       publicationXref.title = titleElements.text();
 
-      var sourceElements = xmlPublicationXrefSelection.find('bp:source');
+      var sourceElements = xmlPublicationXrefSelection.find('bp\\:source, source');
       if (!!sourceElements && sourceElements.length > 1) {
         sourceElements = thisJquery(sourceElements[0]);
       }
       publicationXref.source = sourceElements.text();
 
-      var yearElements = xmlPublicationXrefSelection.find('bp:year');
+      var yearElements = xmlPublicationXrefSelection.find('bp\\:year, year');
       if (!!yearElements && yearElements.length > 1) {
         yearElements = thisJquery(yearElements[0]);
       }
       publicationXref.year = yearElements.text();
 
-      var authorElements = xmlPublicationXrefSelection.find('bp:author');
+      var authorElements = xmlPublicationXrefSelection.find('bp\\:author, author');
       if (!!authorElements && authorElements.length > 1) {
         authorElements = thisJquery(authorElements[0]);
       }

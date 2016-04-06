@@ -1,0 +1,117 @@
+{
+  "dbName": "wikipathways",
+  "dbId": "WP525",
+  "idVersion": "74871",
+  "entities": [
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "25",
+      "title": "Pharmacological properties of new neuroleptic compounds.",
+      "source": "Arzneimittelforschung",
+      "year": "1975",
+      "author": "Coscia L",
+      "displayName": 1
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "363",
+      "title": "Regulation of the hut operons of Salmonella typhimurium and Klebsiella aerogenes by the heterologous hut repressors.",
+      "source": "J Bacteriol",
+      "year": "1975",
+      "author": "Gerson SL",
+      "displayName": 2
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "326",
+      "title": "Schiff-type dyes in the cytochemical staining of DNA.",
+      "source": "Indian J Exp Biol",
+      "year": "1975",
+      "author": "Dutt MK",
+      "displayName": 3
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "272",
+      "title": "[Extrabronchial effects of Bronchodilat in patients with asthma and chronic asthmatic bronchitis].",
+      "source": "Gruzlica",
+      "year": "1975",
+      "author": "Rozniecki J",
+      "displayName": 4
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "34578",
+      "title": "Rapid screening for urease inhibitors.",
+      "source": "Invest Urol",
+      "year": "1979",
+      "author": "Hamilton-Miller JM",
+      "displayName": 5
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "346",
+      "title": "Treatment of severe hypertension with minoxidil.",
+      "source": "Isr J Med Sci",
+      "year": "1975",
+      "author": "Traub YM",
+      "displayName": 6
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "6798456",
+      "title": "Stimulus control and drug dependence.",
+      "source": "NIDA Res Monogr",
+      "year": "1981",
+      "author": "Jasinski DR",
+      "displayName": 7
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "15719025",
+      "title": "The role of BH3-only proteins in the immune system.",
+      "source": "Nat Rev Immunol",
+      "year": "2005",
+      "author": "Strasser A",
+      "displayName": 8
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "2451",
+      "title": "The morning after: residual EEG effects of triazolam and flurazepam, alone and in combination with alcohol.",
+      "source": "Curr Ther Res Clin Exp",
+      "year": "1976",
+      "author": "Mendelson WB",
+      "displayName": 9
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "2324",
+      "title": "Intramembrane particle aggregation in erythrocyte ghosts. II. The influence of spectrin aggregation.",
+      "source": "Biochim Biophys Acta",
+      "year": "1976",
+      "author": "Elgsaeter A",
+      "displayName": 10
+    },
+    {
+      "type": "PublicationXref",
+      "dbName": "pubmed",
+      "dbId": "264",
+      "title": "5-Carbamoylmethyluridine: a new minor nucleoside of transfer ribonucleic acid.",
+      "source": "Biochem Soc Trans",
+      "year": "1975",
+      "author": "Dunn DB",
+      "displayName": 11
+    }
+  ]
+}

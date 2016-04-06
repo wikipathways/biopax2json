@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <Biopax>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ba5">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacological properties of new neuroleptic compounds.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arzneimittelforschung</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1975</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coscia L</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Causa P</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Giuliani E</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nunziata A</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d54">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">363</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regulation of the hut operons of Salmonella typhimurium and Klebsiella aerogenes by the heterologous hut repressors.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Bacteriol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1975</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gerson SL</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magasanik B</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="cf5">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">326</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schiff-type dyes in the cytochemical staining of DNA.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indian J Exp Biol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1975</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dutt MK</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e88">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">272</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Extrabronchial effects of Bronchodilat in patients with asthma and chronic asthmatic bronchitis].</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gruzlica</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1975</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rozniecki J</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grabski W</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ee4">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34578</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rapid screening for urease inhibitors.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Invest Urol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1979</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamilton-Miller JM</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gargan RA</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c86">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">346</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Treatment of severe hypertension with minoxidil.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isr J Med Sci</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1975</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Traub YM</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Redmond DP</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosenfeld JB</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">McDonald RH Jr</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shapiro AP</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e0d">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6798456</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stimulus control and drug dependence.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIDA Res Monogr</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1981</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jasinski DR</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b8e">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15719025</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The role of BH3-only proteins in the immune system.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nat Rev Immunol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2005</bp:year>
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15719025</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The role of BH3-only proteins in the immune system.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nat Rev Immunol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2005</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strasser A</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c0d">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2451</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The morning after: residual EEG effects of triazolam and flurazepam, alone and in combination with alcohol.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curr Ther Res Clin Exp</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1976</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mendelson WB</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goodwin DW</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hill SY</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reichman JD</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b7a">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2324</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Intramembrane particle aggregation in erythrocyte ghosts. II. The influence of spectrin aggregation.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochim Biophys Acta</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1976</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elgsaeter A</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shotton DM</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Branton D</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b4f">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">264</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-Carbamoylmethyluridine: a new minor nucleoside of transfer ribonucleic acid.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochem Soc Trans</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1975</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dunn DB</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trigg MM</bp:author>
+    </bp:PublicationXref>
+  </Biopax>
+

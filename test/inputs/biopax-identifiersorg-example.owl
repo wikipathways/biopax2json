@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+    <owl:Ontology rdf:about="">
+        <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#" />
+    </owl:Ontology>
+    <bp:BioSource rdf:about="id2">
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:displayName>
+        <bp:standardName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Homo sapiens</bp:standardName>
+    </bp:BioSource>
+    <bp:SmallMoleculeReference rdf:about="http://identifiers.org/chebi/CHEBI:5445">
+        <bp:xref rdf:resource="UnificationXref_90345a235878e62e90caba3168e7b3ec" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">sample sm. mol. 1</bp:displayName>
+    </bp:SmallMoleculeReference>
+    <bp:UnificationXref rdf:about="UnificationXref_c8588927c18519f7f4a9c239d4b35f78">
+        <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHEBI</bp:db>
+        <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHEBI:16108</bp:id>
+    </bp:UnificationXref>
+    <bp:Pathway rdf:about="id1">
+        <bp:pathwayComponent rdf:resource="id11" />
+        <bp:pathwayComponent rdf:resource="id10" />
+        <bp:pathwayComponent rdf:resource="id9" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">single-protein demo</bp:displayName>
+        <bp:organism rdf:resource="id2" />
+    </bp:Pathway>
+    <bp:Interaction rdf:about="id11">
+        <bp:participant rdf:resource="myd186962" />
+        <bp:participant rdf:resource="myd186961" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">sample Interaction 1</bp:displayName>
+    </bp:Interaction>
+    <bp:BiochemicalReaction rdf:about="id10">
+        <bp:left rdf:resource="b9ba1" />
+        <bp:right rdf:resource="c38d3" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">sample BC 1</bp:displayName>
+    </bp:BiochemicalReaction>
+    <bp:SmallMoleculeReference rdf:about="http://identifiers.org/chebi/CHEBI:16108">
+        <bp:xref rdf:resource="UnificationXref_c8588927c18519f7f4a9c239d4b35f78" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">glycerone phosph.</bp:displayName>
+    </bp:SmallMoleculeReference>
+    <bp:BiochemicalReaction rdf:about="id9">
+        <bp:left rdf:resource="b9ba1" />
+        <bp:right rdf:resource="f34b3" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">sample BC 2</bp:displayName>
+    </bp:BiochemicalReaction>
+    <bp:SmallMolecule rdf:about="c38d3">
+        <bp:entityReference rdf:resource="http://identifiers.org/chebi/CHEBI:5445" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Glyceraldehyde</bp:displayName>
+    </bp:SmallMolecule>
+    <bp:UnificationXref rdf:about="UnificationXref_02fccc36cff8ec9f4cdacd5b62eec010">
+        <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHEBI:704854</bp:id>
+        <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    </bp:UnificationXref>
+    <bp:SmallMolecule rdf:about="b9ba1">
+        <bp:entityReference rdf:resource="http://identifiers.org/chebi/CHEBI:704854" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">Fructose 1-phosphate</bp:displayName>
+    </bp:SmallMolecule>
+    <bp:SmallMoleculeReference rdf:about="http://identifiers.org/chebi/CHEBI:704854">
+        <bp:xref rdf:resource="UnificationXref_02fccc36cff8ec9f4cdacd5b62eec010" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">sample sm. mol. 2</bp:displayName>
+    </bp:SmallMoleculeReference>
+    <bp:UnificationXref rdf:about="UnificationXref_90345a235878e62e90caba3168e7b3ec">
+        <bp:id rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">CHEBI:5445</bp:id>
+        <bp:db rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">ChEBI</bp:db>
+    </bp:UnificationXref>
+    <bp:SmallMolecule rdf:about="f34b3">
+        <bp:entityReference rdf:resource="http://identifiers.org/chebi/CHEBI:16108" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">DHAP</bp:displayName>
+    </bp:SmallMolecule>
+    <bp:Protein rdf:about="myd186962">
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FBgn0034357</bp:displayName>
+        <bp:entityReference rdf:resource="http://webservice.bridgedb.org/id186962" />
+    </bp:Protein>
+    <bp:ProteinReference rdf:about="http://webservice.bridgedb.org/id186962">
+        <bp:xref rdf:resource="http://identifiers.org/flybase/FBgn0034357" />
+        <bp:organism rdf:resource="id2" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FBgn0034357</bp:displayName>
+    </bp:ProteinReference>
+    <bp:UnificationXref rdf:about="http://identifiers.org/flybase/FBgn0034357">
+        <bp:id rdf:datatype="xsd:string">FBgn0034357</bp:id>
+        <bp:db rdf:datatype="xsd:string">FlyBase</bp:db>
+    </bp:UnificationXref>
+    <bp:Protein rdf:about="myd186961">
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FBgn0034356</bp:displayName>
+        <bp:entityReference rdf:resource="id186961" />
+    </bp:Protein>
+    <bp:ProteinReference rdf:about="id186961">
+        <bp:xref rdf:resource="http://identifiers.org/flybase/FBgn0034356" />
+        <bp:organism rdf:resource="id2" />
+        <bp:displayName rdf:datatype = "http://www.w3.org/2001/XMLSchema#string">FBgn0034356</bp:displayName>
+    </bp:ProteinReference>
+    <bp:UnificationXref rdf:about="http://identifiers.org/flybase/FBgn0034356">
+        <bp:id rdf:datatype="xsd:string">FBgn0034356</bp:id>
+        <bp:db rdf:datatype="xsd:string">FlyBase</bp:db>
+    </bp:UnificationXref>
+</rdf:RDF>

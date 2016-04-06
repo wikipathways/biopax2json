@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <Biopax>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bed">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6433456</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Review of the transmission of hepatitis by clotting factor concentrates.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scand J Haematol Suppl</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1984</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tabor E</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="faa">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35623</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Re: the impalpable testis: a rational approach to management.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Urol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1979</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berg OC</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d45">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">562356</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cultivation of Chlamydia trachomatis in cycloheximide-treated mccoy cells.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Clin Microbiol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1977</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ripa KT</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mårdh PA</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="af5">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32356</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comparison of two systems for the instrumentation of rotary tablet machines [proceedings].</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Pharm Pharmacol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1978</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ho A</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greer H</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clare D</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bc1">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">432523</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Effect of pinealectomy on testosterone, cholesterol and ascorbic acid in the rat testis.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endocrinologie</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1979</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Damian E</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ianăş O</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bădescu I</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e3e">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">325234</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacteriophage proteins associated with the bacterial membrane after bacteriophage T7 infection.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Virol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1977</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ennis HL</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kievitt KD</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="cba">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3425234</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-reactive protein: an early marker for neonatal bacterial infection due to prolonged rupture of amniotic membranes and/or amnionitis.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acta Obstet Gynecol Scand</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1987</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salzer HR</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genger H</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muhar U</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lischka A</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schatten C</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pollak A</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d79">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3352636</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic injury in hybrid male mice exposed to low doses of 60Co gamma-rays or fission neutrons. III. Frequencies of abnormal sperm and reciprocal translocations measured during and following long-term weekly exposures.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mutat Res</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1988</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grahn D</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carnes BA</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="f90">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2345234</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Responses of cultured smooth muscle cells from human nonatherosclerotic arteries and primary stenosing lesions after photoradiation: implications for photodynamic therapy of vascular stenoses.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Am Coll Cardiol</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1990</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dartsch PC</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ischinger T</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Betz E</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d51">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3452</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purification of an immunosuppressive principle from Ehrlich carcinoma ascites.</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gann</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1975</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motoki H</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kurokawa T</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shiraishi H</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kitame F</bp:author>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ono Y</bp:author>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ce6">
+      <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34252</bp:id>
+      <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+      <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[Drug therapy of uric acid calculi--litholysis].</bp:title>
+      <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ugeskr Laeger</bp:source>
+      <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1979</bp:year>
+      <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Christoffersen JC</bp:author>
+    </bp:PublicationXref>
+  </Biopax>

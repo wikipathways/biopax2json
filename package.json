@@ -2,9 +2,10 @@
   "name": "biopax2json",
   "version": "0.0.0",
   "description": "Convert Biopax OWL (rdf/xml) data to JSON-LD",
-  "main": "biopax.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:unit",
+    "test:unit": "mocha ./test/spec/api.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,9 @@
     "he": "^0.5.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
     "pretty-data": "~0.40.0",
-    "sinon": "^1.17.2"
+    "sinon": "^1.17.3"
   }
 }
