@@ -7,6 +7,9 @@
     "test": "npm run test:unit",
     "test:unit": "mocha ./test/spec/api.js"
   },
+  "browser": {
+    "cheerio": false
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wikipathways/biopax2json.git"
